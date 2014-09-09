@@ -14,6 +14,5 @@ Example:
 Outputs 
 
 ```
-  Signature Algorithm: sha1WithRSAEncryption
-  Signature Algorithm: sha1WithRSAEncryption
+  www.google.com, sha1WithRSAEncryption
 ```
