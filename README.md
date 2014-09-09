@@ -8,7 +8,7 @@ Usage: checkSSLSignature.sh www.website.com output_certificate_file
 Example: 
 
 ```
-./checkSSLSignature.sh google.com google.cert
+./checkSSLSignature.sh www.google.com google.cert
 ```
 
 Outputs 
