@@ -17,8 +17,10 @@ then
 fi
 
 echo -n | openssl s_client -connect $1:$PORT 2> /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END    CERTIFICATE-/p' > $2
-openssl x509 -noout -text < $2 | grep "Signature Algorithm"
+#openssl x509 -noout -text < $2 | grep -m 1 "Signature Algorithm"
+SIGNATURE=`openssl x509 -noout -text < $2 | grep -m 1 "Signature Algorithm" | cut -d ":" -f 2 | sed 's/^ *//'`
 
 
+echo $1, $SIGNATURE
 
 
