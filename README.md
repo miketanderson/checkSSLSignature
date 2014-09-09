@@ -2,3 +2,13 @@ checkSSLSignature
 =================
 
 checkSSLSignature is a bash script that uses openssl to verify the signature algorithm of a website's SSL certificate
+
+Usage: checkSSLSignature.sh www.website.com output_certificate_file
+
+Example: ./checkSSLSignature.sh google.com google.cert
+Output: 
+./checkSSLSignature.sh google.com google.cert
+
+  Signature Algorithm: sha1WithRSAEncryption
+  Signature Algorithm: sha1WithRSAEncryption
+
